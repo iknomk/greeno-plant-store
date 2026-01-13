@@ -28,7 +28,7 @@ Greeno — это одностраничный сайт для магазина 
 ## 📸 Превью
 [Uploading image.png…]()
 <img width="1361" height="407" alt="image" src="https://github.com/user-attachments/assets/e6a28b0b-ef7a-4f04-97f0-3b5adc70f90e" />
-![Uploading image.png…]()
+[Uploading image.png…]()
 
 
 
