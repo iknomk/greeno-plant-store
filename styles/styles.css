@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+:root {
+    --color-dark-green: #20240B;
+    --color-white: #ffffff;
+    --color-dark: #000000;
+	  --color-section-grey: #ECECEC;
+    --color-dark-grey: #525252;
+
+    --border-radius: 35px;
+
+
+    --font-family-base: Raleway, sans-serif;
+}
+
+body {
+    margin: 0%;
+    font-family: var(--font-family-base);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+section {
+    padding: 40px 100px 20px 100px;
+}
+/* Шапка */
+.header {
+  background-color: var(--color-white);
+  padding: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu img {
+  width: 40px;
+  margin-right: 16px;
+}
+
+.header-menu h1 {
+  font-size: 20px;
+  margin-right: 280px;
+  color: var(--color-dark);
+}
+
+.header-menu-list {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu-link, .login {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.login {
+    margin-left: 250px;
+    font-size: 17px;
+}
+
+  
+/* Секция "Монстера" */
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding-right: 70px;
+}
+
+.header-info-text {
+  max-width: 50%;
+  padding: 0;
+}
+
+.header-info-text h3 {
+  margin: 0;
+  font-style: italic;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.header-info-monstera {
+  font-size: 36px;
+  color: var(--color-dark);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header-info p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header-photo {
+    margin-left: 100px;
+}
+
+/* Каталог */
+.catalog {
+  text-align: left;
+  display:flex;
+  background-color: var(--color-section-grey);
+}
+
+.catalog h1 {
+  font-size: 32px;
+  margin-top: 80px;
+  letter-spacing: 1px;
+}
+
+.catalog-header p {
+  font-size: 17px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+}
+
+.catalog hr {
+  margin: 70px 30px;
+  height: 130px;
+  border: 1px solid var(--color-dark-grey);
+}
+
+.card-plant {
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);          
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  transition: transform 0.2s;
+  padding-bottom: 20px;
+}
+
+.card-plant:hover {
+  transform: scale(1.05);
+}
+
+.card-plant-img {
+  max-width: 50%;
+  border-radius: var(--border-radius);
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-plant-bio {
+  color: var(--color-dark-grey);
+}
+.card-plant-price {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--color-dark-green);
+}
+
+.card-plant button {
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  border-radius: var(--border-radius);
+}
+
+
+/* Секция "О нас" */
+.about-us {
+  position: relative;
+  height: 600px;
+}
+
+.about-us-background {
+  background-image: url('./images/background.png'); /* Замените URL на реальную картинку */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-us-card {
+  position:static;
+  background-color: #fff;
+  padding: 50px;
+  max-width: 700px;
+  margin-top: 250px;
+}
+
+.about-us-card h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-us-card p {
+  float: right;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-dark-grey);
+  font-weight: bold;
+}
+/* Отзывы */
+.reviews {
+  background-color: var(--color-section-grey);
+  text-align: center;
+}
+
+.reviews-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reviews-cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.reviews-card-header {
+  display: flex;
+}
+
+.reviews-card-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.reviews-card {
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 256px;
+  height: 209px;
+}
+
+.reviews-card-stars {
+  margin-left: 10px;
+	display: inline-block;
+	font-size: 0;
+}
+.reviews-card-stars span {
+	padding: 0;
+	font-size: 35px;
+	line-height: 1;
+	color: var(--color-dark-grey);
+}
+.reviews-card-stars > span:before {
+	content: '★';
+}
+.reviews-card-stars > span.active {
+	color: var(--color-dark-green);
+}
+
+.reviews-card-name {
+  margin-bottom: 10px;
+}
+
+.reviews-card-bio {
+  font-size: 15px;
+  color: var(--color-dark-green);
+}
+
+/* Блог */
+.blog {
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 28px;
+}
+
+.blog-bio {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.blog-card {
+  display: inline-block;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  width: 300px;
+}
+
+.blog-card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing:1px;
+  font-weight: bold;
+}
+
+.blog-card-text {
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+/* Футер */
+footer {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+}
+
+.footer-container {
+  padding: 40px 100px 0px 100px;
+}
+.footer-form {
+  text-align: center;
+}
+
+.footer-form-text {
+  font-size: 16px;
+}
+
+.footer-form-under {
+  display: flex;
+  gap: 260px;
+  align-items: center;
+}
+
+.footer-form-img {
+  width: 30%;
+}
+
+.footer-form-under h1 {
+  font-size: 24px;
+}
+
+.footer-form-under-title {
+  display:inline-flex;
+  align-items: center;
+}
+.footer-form-under-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor:alias;
+}
+
+.footer-form-under-img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-form-under-text {
+  padding-left: 40px;
+  display: flex;
+  gap: 5px;
+}
+
+.footer-form-under-text-img {
+  width: 16px; 
+  height: 16px;
+}
+
+.footer-form-under-text-text {
+  font-size: 14px;
+  color: var(--color-dark-grey);
+  margin: 0;
+}
