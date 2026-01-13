@@ -26,9 +26,10 @@ Greeno — это одностраничный сайт для магазина 
 Откройте файл `index.html` в браузере.
 
 ## 📸 Превью
-[Uploading image.png…]()
 <img width="1361" height="407" alt="image" src="https://github.com/user-attachments/assets/e6a28b0b-ef7a-4f04-97f0-3b5adc70f90e" />
-[Uploading image.png…]()
+<img width="1346" height="462" alt="image" src="https://github.com/user-attachments/assets/6f802858-7a45-4d2c-95fa-68f2c7ffb9ba" />
+<img width="1352" height="635" alt="image" src="https://github.com/user-attachments/assets/375ff05a-7a6d-44c8-a918-b42ac0ac4090" />
+
 
 
 
